@@ -1,4 +1,4 @@
-document.querySelector('#sec').addEventListener('click', () => {
+document.querySelector('#button').addEventListener('click', () => {
     // API call
     const xhr = new XMLHttpRequest()
     
@@ -17,13 +17,13 @@ document.querySelector('#sec').addEventListener('click', () => {
                 
                 <div>
                     
-                    <p>${response[i].title}
+                    <p>${response[i].title}</p>
                     
                 </div>
             `
             }
 console.log(output)
-            document.querySelector('#videos').innerHTML = output
+            document.querySelector('#text').innerHTML = output
         }
     }
 
